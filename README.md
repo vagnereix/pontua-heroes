@@ -209,7 +209,7 @@ src
 
 ![Tecnologias](/.github/technologies.png 'Tecnologias utilizadas')
 
-## Fluxo de uso da aplicação - [**Pontua Heroes**](https://)
+## Fluxo de uso da aplicação - [**Pontua Heroes**](https://pontua-heroes.vercel.app/)
 
 - Ao entrar na aplicação, o usuário verá a tela de `login` no sistema, com a opção de visualizar a senha digitada e suas validações;
   <h1 align='center'>
@@ -269,4 +269,4 @@ $ pnpm start
 
 ```
 
-A aplicação também está disponível [**aqui**](https://).
+A aplicação também está disponível [**aqui**](https://pontua-heroes.vercel.app/).
