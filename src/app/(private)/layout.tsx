@@ -2,8 +2,8 @@ import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 
 import '@/styles/globals.scss';
-import NextAuthProvider from '@/providers/NextAuthProvider';
-import SearchContextProvider from '@/contexts/useSearch';
+import { Sidebar } from '@/components/Sidebar';
+import { Header } from '@/components/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,9 +26,14 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <SearchContextProvider>
-          <NextAuthProvider>{children}</NextAuthProvider>
-        </SearchContextProvider>
+        <main className='flex min-h-screen w-screen'>
+          <Sidebar />
+
+          <div className='flex flex-col w-full'>
+            <Header />
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
