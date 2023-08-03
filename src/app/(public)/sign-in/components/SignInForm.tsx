@@ -41,6 +41,11 @@ export function SignInForm() {
     replace('/select-hero');
   }
 
+  function handleForgotPassword() {
+    setLoading(true);
+    push('/reset-password');
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <span className='text-gray-500 leading-5 tracking-[-1.04px] block mb-[6px]'>
@@ -82,7 +87,7 @@ export function SignInForm() {
       </button>
 
       <span
-        onClick={() => push('/reset-password')}
+        onClick={handleForgotPassword}
         className='select-none cursor-pointer text-orange-500 text-[11px] justify-end flex gap-1 mt-5'
       >
         <ShieldQuestion size={14} />
