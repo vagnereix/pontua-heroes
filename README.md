@@ -212,6 +212,8 @@ src
 ## Fluxo de uso da aplicação - [**Pontua Heroes**](https://pontua-heroes.vercel.app/)
 
 - Ao entrar na aplicação, o usuário verá a tela de `login` no sistema, com a opção de visualizar a senha digitada e suas validações;
+
+  - **IMPORTANTE**: Para realizar login com sucesso deverá ser enviado obrigatoriamente o e-mail `eve.holt@reqres.in` e `qualquer senha`. Caso seja enviado qualquer outro e-mail será gerado um erro de `Credenciais incorretas`.
   <h1 align='center'>
     <img src='.github/login.png' align='center' width='920' />
   </h1>
@@ -266,6 +268,9 @@ $ pnpm dev
 $ pnpm build
 
 $ pnpm start
+
+# Para realizar login com sucesso na aplicação, enviar obrigatoriamente o e-mail `eve.holt@reqres.in` e qualquer senha.
+# Qualquer outro valor enviado para o campo de e-mail resultará em erro de credenciais.
 
 ```
 
