@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.hero-card:nth-last-child(1),
+.hero-card:nth-last-child(2) {
+  grid-column: span 2;
+
+  img {
+    @apply w-auto;
+  }
+}
+
+.group:focus ~ .group-focus {
+  @apply text-blue-600;
+}
+
+.reveal-hidden {
+  &[type='password']::-ms-reveal,
+  &[type='password']::-ms-clear {
+    display: none;
+  }
+
+  &::-ms-reveal,
+  &::-ms-clear {
+    display: none;
+  }
+}
